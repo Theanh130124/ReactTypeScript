@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LogoPizza from "../assets/pizza.png";
 import CardPizza from "../sections/CardPizza";
 import { Pizza } from "../models/pizza.model";
@@ -23,6 +23,15 @@ const HomePage = () => {
     },
   ]);
 
+
+  useEffect(()=>(
+    console.log("UseEffect render"),
+     // Moi lan muon set lai phai ...pizza vi bien la const nen minh phai copy ra doi tuong do chu khong thay doi truc tiep duoc
+    setPizza([...pizza,{id:4,title:"Pizza moi" , description:"Test"}])
+  )
+  ,[])
+
+  console.log("Templates Render")
   
   const [person , setPersion] = useState<Pizza>({
     title:"TheAnhDev",
@@ -44,7 +53,7 @@ const HomePage = () => {
       }}
     >
       <div className="wrapper-card-items">
-        {pizza.map(item =>  <CardPizza id={item.id} title={item.title} description={item.description} />)}
+        {pizza.map(item =>  <CardPizza key={item.id} id={item.id} title={item.title} description={item.description} />)}
        
       </div>
       <br/>
