@@ -1,14 +1,13 @@
 import LogoPizza from "../assets/pizza.png";
+import { Pizza } from "../models/pizza.model";
 
+
+//Day la compoment con cua HomePage.tsx -> nhan gia tri truyen Props
 
 
 //Day la 1 component Card minh tu dinh nghia
 //interface di voi class
-type Props = {
-  title?: String;
-  description?: String;
-
-};
+type Props = Pizza;
 const CardPizza = ({
     title,
     description
