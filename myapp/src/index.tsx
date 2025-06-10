@@ -3,13 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Header from './layout/Header';
+import Footer from './layout/Footer';
+import HomePage from './pages/HomePage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    {/* //Noi chung phan nay giong - Dung cua react RouterDom */}
+    <Header/>
+    <HomePage/>
+    <Footer/>
   </React.StrictMode>
 );
 
