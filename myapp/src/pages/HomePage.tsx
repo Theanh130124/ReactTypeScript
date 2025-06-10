@@ -1,4 +1,5 @@
 import LogoPizza from "../assets/pizza.png";
+import CardPizza from "../sections/CardPizza";
 
 const HomePage = () => {
   return (
@@ -10,82 +11,7 @@ const HomePage = () => {
       }}
     >
       <div className="wrapper-card-items">
-        <div className="card-items">
-          <img className="card-image-pizza" src={LogoPizza} alt="Anh Pizza" />
-          <div style={{ height: "50%", width: "100%" }}></div>
-          <div className="card-content">
-            <div>
-              <div style={{fontSize:"20px",fontWeight:"600", color:"#fff"}}>Pizza Thit Bam</div>
-              <div style={{fontSize:"20px",fontWeight:"600", color:"#fff" , marginTop:".5rem"}}>Thit bam sot ca chua</div>
-
-              <div></div>
-            </div>
-          </div>
-        </div>
-
-        <div className="card-items">
-          <img className="card-image-pizza" src={LogoPizza} alt="Anh Pizza" />
-          <div style={{ height: "50%", width: "100%" }}></div>
-          <div className="card-content">
-            <div>
-              <div style={{fontSize:"20px",fontWeight:"600", color:"#fff"}}>Pizza Thit Bam</div>
-              <div style={{fontSize:"20px",fontWeight:"600", color:"#fff" , marginTop:".5rem"}}>Thit bam sot ca chua</div>
-
-              <div></div>
-            </div>
-          </div>
-        </div>
-
-
-        <div className="card-items">
-          <img className="card-image-pizza" src={LogoPizza} alt="Anh Pizza" />
-          <div style={{ height: "50%", width: "100%" }}></div>
-          <div className="card-content">
-            <div>
-              <div style={{fontSize:"20px",fontWeight:"600", color:"#fff"}}>Pizza Thit Bam</div>
-              <div style={{fontSize:"20px",fontWeight:"600", color:"#fff" , marginTop:".5rem"}}>Thit bam sot ca chua</div>
-
-              <div></div>
-            </div>
-          </div>
-        </div>
-
-        <div className="card-items">
-          <img className="card-image-pizza" src={LogoPizza} alt="Anh Pizza" />
-          <div style={{ height: "50%", width: "100%" }}></div>
-          <div className="card-content">
-            <div>
-              <div style={{fontSize:"20px",fontWeight:"600", color:"#fff"}}>Pizza Thit Bam</div>
-              <div style={{fontSize:"20px",fontWeight:"600", color:"#fff" , marginTop:".5rem"}}>Thit bam sot ca chua</div>
-
-              <div></div>
-            </div>
-          </div>
-        </div>
-        <div className="card-items">
-          <img className="card-image-pizza" src={LogoPizza} alt="Anh Pizza" />
-          <div style={{ height: "50%", width: "100%" }}></div>
-          <div className="card-content">
-            <div>
-              <div style={{fontSize:"20px",fontWeight:"600", color:"#fff"}}>Pizza Thit Bam</div>
-              <div style={{fontSize:"20px",fontWeight:"600", color:"#fff" , marginTop:".5rem"}}>Thit bam sot ca chua</div>
-
-              <div></div>
-            </div>
-          </div>
-        </div>
-        <div className="card-items">
-          <img className="card-image-pizza" src={LogoPizza} alt="Anh Pizza" />
-          <div style={{ height: "50%", width: "100%" }}></div>
-          <div className="card-content">
-            <div>
-              <div style={{fontSize:"20px",fontWeight:"600", color:"#fff"}}>Pizza Thit Bam</div>
-              <div style={{fontSize:"20px",fontWeight:"600", color:"#fff" , marginTop:".5rem"}}>Thit bam sot ca chua</div>
-
-              <div></div>
-            </div>
-          </div>
-        </div>
+      <CardPizza title="Pizza Thit Bam" description="Thi bam sot ca chua"/>
       </div>
     </div>
   );
